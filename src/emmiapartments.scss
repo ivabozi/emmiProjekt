@@ -1,0 +1,20 @@
+@import '~@angular/material/theming';
+
+@include mat-core();
+
+
+$emmiapartments-primary: mat-palette($mat-light-blue, 100);
+$emmiapartments-accent:  mat-palette($mat-light-blue, 50);
+
+
+$emmiapartments-warn:    mat-palette($mat-red);
+
+
+$emmiapartments: mat-light-theme($emmiapartments-primary, $emmiapartments-accent, $emmiapartments-warn);
+
+
+@include angular-material-theme($emmiapartments);
+
+.navtabs-container {
+background-color: mat-color($emmiapartments-accent);
+}
