@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FlexLayoutModule } from '@angular/flex-layout';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -21,6 +22,10 @@ import { SignupComponent } from './AUTORIZACIJA/signup/signup.component';
 import { LIFESTYLEComponent } from './lifestyle/lifestyle.component';
 import { WellnessISpaComponent} from './lifestyle/wellness-i-spa/wellness-i-spa.component';
 import { ZnamenitostiIAtrakcijeComponent } from './LIFESTYLE/znamenitosti-i-atrakcije/znamenitosti-i-atrakcije.component';
+import { HomeComponent } from './home/home.component';
+import { HeaderComponent } from './navigation/header/header.component';
+import { SidenavListComponent } from './navigation/sidenav-list/sidenav-list.component';
+import { NavtabsComponent } from './navigation/navtabs/navtabs.component';
 
 
 @NgModule({
@@ -41,13 +46,18 @@ import { ZnamenitostiIAtrakcijeComponent } from './LIFESTYLE/znamenitosti-i-atra
     SignupComponent,
     LIFESTYLEComponent,
     WellnessISpaComponent,
-    ZnamenitostiIAtrakcijeComponent
+    ZnamenitostiIAtrakcijeComponent,
+    HomeComponent,
+    HeaderComponent,
+    SidenavListComponent,
+    NavtabsComponent
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     AppRoutingModule,
     MaterialModule,
+    FlexLayoutModule
   ],
   providers: [],
   bootstrap: [AppComponent]

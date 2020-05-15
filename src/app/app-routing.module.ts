@@ -8,6 +8,7 @@ import { VjencanjaIProslaveComponent } from './vjencanja-i-proslave/vjencanja-i-
 import { PONUDEComponent } from './ponude/ponude.component';
 import { SignupComponent } from './AUTORIZACIJA/signup/signup.component';
 import { SigninComponent } from './AUTORIZACIJA/signin/signin.component';
+import { HomeComponent } from './home/home.component';
 
 
 // ovdje sam morala u listu dodati puteve (gdje su komponente locirane) i komponente
@@ -19,7 +20,8 @@ const routes: Routes = [
   {path: 'vjencanja-i-proslave', component: VjencanjaIProslaveComponent},
   {path: 'ponude', component: PONUDEComponent},
   {path: 'signin', component: SigninComponent},
-  {path: 'signup', component: SignupComponent}
+  {path: 'signup', component: SignupComponent},
+  {path: '', component: HomeComponent}
 ];
 
 @NgModule({

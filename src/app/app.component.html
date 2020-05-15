@@ -1,1 +1,14 @@
-<router-outlet></router-outlet>
+<mat-sidenav-container>
+
+    <mat-sidenav #sidenav>
+       <app-sidenav-list (closeSideNavigation)="sidenav.close()"></app-sidenav-list> <!--Referenciramo se na sideNav-zatvaranje-->
+    </mat-sidenav>
+
+ <mat-sidenav-content>
+     <app-header (SideNavigationToggle)="sidenav.toggle()"></app-header><!--Referenciramo se na sideNav-na pritisak otvori-->
+     <app-navtabs></app-navtabs>
+ </mat-sidenav-content>
+
+ <router-outlet></router-outlet>
+</mat-sidenav-container>
+
