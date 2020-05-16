@@ -15,10 +15,12 @@ import { HomeComponent } from './home/home.component';
 
 const routes: Routes = [
   {path: 'apartmani', component: APARTMANIComponent},
-  {path: 'hrana-i-napitci', component: HRANAINAPITCIComponent},
+  {path: 'HRANA-I-NAPITCI', component: HRANAINAPITCIComponent},
+  {path: 'hranainapitci', redirectTo: 'HRANA-I-NAPITCI', pathMatch: 'full'},
   {path: 'LIFESTYLE', component: LIFESTYLEComponent},
-  {path: 'vjencanja-i-proslave', component: VjencanjaIProslaveComponent},
-  {path: 'ponude', component: PONUDEComponent},
+  {path: 'Vjencanja-I-Proslave', component: VjencanjaIProslaveComponent},
+  {path: 'vjencanjaiproslave', redirectTo: 'Vjencanja-I-Proslave', pathMatch: 'full'},
+  {path: 'PONUDE', component: PONUDEComponent},
   {path: 'signin', component: SigninComponent},
   {path: 'signup', component: SignupComponent},
   {path: '', component: HomeComponent}

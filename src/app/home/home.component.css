@@ -1,0 +1,19 @@
+.container {
+    height: 100vh;
+    background: url(/assets/images/background1.jpg) no-repeat;
+}
+
+.rezerviraj-container {
+ padding: 35px 90px;
+}
+
+
+.rezerviraj-button {
+    width: 170px;
+    color: white;
+    border: 1px solid white;
+    text-transform: uppercase;
+}
+.header-container {
+    height: 100vh;
+}

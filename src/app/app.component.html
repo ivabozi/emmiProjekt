@@ -7,8 +7,13 @@
  <mat-sidenav-content>
      <app-header (SideNavigationToggle)="sidenav.toggle()"></app-header><!--Referenciramo se na sideNav-na pritisak otvori-->
      <app-navtabs></app-navtabs>
+
+<main>
+
+    <router-outlet></router-outlet>
+</main>
  </mat-sidenav-content>
 
- <router-outlet></router-outlet>
+
 </mat-sidenav-container>
 

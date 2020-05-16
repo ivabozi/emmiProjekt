@@ -1,0 +1,14 @@
+@import '~@angular/material/theming';
+
+@mixin navtabs-component-theme ($emmiapartments) {
+
+    $primary: map-get($emmiapartments, primary);
+    $accent: map-get($emmiapartments, accent);
+
+
+
+    //theming style ide ovdje
+    .navtabs-container {
+        background-color: mat-color($emmiapartments-primary, 300);
+        }
+}
